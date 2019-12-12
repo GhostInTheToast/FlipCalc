@@ -5,6 +5,7 @@ public class FlipCalc {
 	public static void main(String[] args) {
 		
 		
+		
 		// scanner object
 		Scanner input = new Scanner(System.in);
 		
