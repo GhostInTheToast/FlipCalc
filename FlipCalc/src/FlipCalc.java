@@ -42,7 +42,6 @@ public class FlipCalc {
 			}
 		}
 		
-
 		// add 5% margin estimate/goal per item
 		// add in file save system and show recent flips
 		
