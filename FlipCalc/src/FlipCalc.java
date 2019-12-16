@@ -11,7 +11,7 @@ public class FlipCalc {
 		
 		int skee = 4;
 		while(skee != 3) {
-			System.out.println("Welcome to FlipCalc V1.0!\n\n1 = Flipping Calculator.\n2 = Past flips.\n3 = Quit.\n\nPlease enter the number corresponding to what you would like : ");
+			System.out.println("\n\nWelcome to FlipCalc V1.0!\n\n1 = Flipping Calculator.\n2 = Past flips.\n3 = Quit.\n\nPlease enter the number corresponding to what you would like : ");
 
 			skee = input.nextInt();
 			switch(skee) {
@@ -32,8 +32,10 @@ public class FlipCalc {
 				int potentialProfit = (high * quantity) - (low * quantity);
 			
 				// summary output
-				System.out.print("\nThe potential profit here for this flip is " + potentialProfit + " gp.\nREMEMBER! Buy at " + low + " and sell at " + high + "!\n\n");
-			
+				if(potentialProfit > 0) 
+					System.out.print("\nThe potential profit here for this flip is " + potentialProfit + " gp.\nREMEMBER! Buy at " + low + " and sell at " + high + "!\n\n");
+				else
+					System.out.println("\nAdvised to not flip this item at those margins.");
 					break;
 			case 2 : 
 				break;
@@ -42,8 +44,7 @@ public class FlipCalc {
 			}
 		}
 		
-		// add 5% margin estimate/goal per item
-		// add in file save system and show recent flips
+		// add in local db save system and show recent flips
 		
 		input.close();
 	}
