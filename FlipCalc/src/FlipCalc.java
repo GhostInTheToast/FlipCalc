@@ -44,7 +44,7 @@ public class FlipCalc {
 			}
 		}
 		
-		// add in local db save system and show recent flips
+		// add in local db save system and show recent flips.
 		
 		input.close();
 	}
